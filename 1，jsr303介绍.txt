@@ -1,0 +1,4 @@
+1，关于JSR 303
+是JAVA EE6中的一项子规范，叫做Bean Validation规范。为Bean验证定义了元数据模型和API。
+它的参考实现是 Hibernate Validator。
+

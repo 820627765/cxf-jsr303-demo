@@ -1,0 +1,58 @@
+1，新建项目 cxf-jax-rs-server
+2，加入依赖
+   <!--cxf对jax-ws的支持-->
+   <dependency>
+       <groupId>org.apache.cxf</groupId>
+       <artifactId>cxf-rt-frontend-jaxws</artifactId>
+       <version>3.0.1</version>
+   </dependency>
+
+   <!--内置jetty web服务器-->
+   <dependency>
+       <groupId>org.apache.cxf</groupId>
+       <artifactId>cxf-rt-transports-http</artifactId>
+       <version>3.0.1</version>
+   </dependency>
+
+   <!--依赖日志-->
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>1.6.6</version>
+   </dependency>
+
+3，编写业务接口和接口实现及发布编写的webservice服务
+   3.1 编写业务接口，并加上 @WebService 注解，表示是一个webservice接口
+   /**
+    * @WebService 注解表示把该接口标注为WebService接口，如此才能被远程调用
+    * 该注解需要在JDK1.6以上才可以使用
+    */
+   @WebService
+   public interface UserService {
+       void saveUser(User user);
+   }
+   3.2 编写业务接口实现
+   public class UserServiceImpl implements UserService {
+       @Override
+       public void saveUser(User user) {
+           System.out.println("保存用户" + user);
+       }
+   }
+   3.3 将编写的接口发布出去，发布后客户端才能访问
+   public static void main(String[] args) {
+       //1,创建工厂对象
+       JaxWsServerFactoryBean factoryBean = new JaxWsServerFactoryBean();
+
+       //2,设置参数
+       //设置服务端的访问地址
+       factoryBean.setAddress("http://localhost:8888/userService");
+       //设置要发布的webservice接口
+       factoryBean.setServiceClass(UserService.class);
+       //设置要发布的webservice接口的实现类，当客户端调用时，才知道去调用那个实现的逻辑
+       factoryBean.setServiceBean(new UserServiceImpl());
+
+       //3,发布接口（阻塞方法）
+       factoryBean.create();
+
+       System.out.println("webservice服务程序发布成功");
+   }

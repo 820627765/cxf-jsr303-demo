@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07ed1466-1b32-4521-90e9-71114185d0e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\install\apache-maven-3.8.1\repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../install/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="D:\install\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vuApsKLeFxwrr4P3TuEO7PnMnl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="cxf-jsr303-demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="cxf-jsr303-demo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cxf-jsr303-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07ed1466-1b32-4521-90e9-71114185d0e7" name="Default Changelist" comment="" />
+      <created>1627401785171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627401785171</updated>
+      <workItem from="1627401826135" duration="55000" />
+      <workItem from="1627427132805" duration="2194000" />
+      <workItem from="1627483600351" duration="3027000" />
+      <workItem from="1627486965015" duration="3461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1627488744149">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627488744149" />
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1627489305301">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305301" />
+    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1627489305300">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305300" />
+    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1627489305299">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305299" />
+    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1627489305300">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305300" />
+    <state width="1237" height="213" key="GridCell.Tab.1.bottom" timestamp="1627489305302">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305302" />
+    <state width="1237" height="213" key="GridCell.Tab.1.center" timestamp="1627489305301">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305301" />
+    <state width="1237" height="213" key="GridCell.Tab.1.left" timestamp="1627489305301">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305301" />
+    <state width="1237" height="213" key="GridCell.Tab.1.right" timestamp="1627489305301">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="213" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627489305301" />
+    <state x="56" y="2" key="new project wizard" timestamp="1627491933480">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="56" y="2" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627491933480" />
+  </component>
+</project>

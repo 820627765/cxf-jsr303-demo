@@ -1,0 +1,31 @@
+1，我们使用 java语言来开发 webservice 应用
+2，那么java 用什么语言来开发webservice 应用呢？
+   使用CXF框架。
+3，什么是CXF？
+   CXF 是Java语言编写 WebService 应用程序的一个框架。
+   CXF的全称是 Apache CXF = Celtix + XFire 。即早期是两个项目，后来进行了“精华”合并，就简称为 CXF了。
+   CXF 提供了对 JAX-WS 全面的支持。
+   CXF 可以天然和Spring进行无缝集成。
+
+   简单理解为：CXF 就是java开发WebService应用的一个框架。
+
+4，CXF 的两种开发方式
+   4.1 JAX-WS
+       JAX-WS(Java API for XML Web Service)，是一个规范，是一组XML Web Service 的 JAVA API。
+       其特点在于 客户端和服务端之间的交互是采用 XML 进行交互的。
+       即：是基于xml协议的webservice技术。
+   4.2 JAX-RS
+       JAX-RS(Java API for RESTful Web Service)，是java EE6引入的一个新技术。是基于restful风格的
+       webservice技术。
+
+   JAX-WS 和 JAX-RS 都是java定义的开发webservice应用程序的规范，前者强调以采用xml进行数据交互，后者强调
+   采用restful风格进行交互。
+
+   CXF 对 JAX-WS 和 JAX-RS 两种规范都提供了支持，所以我们可以使用CXF框架开发 JAX-WS 和 JAX-RS 规范的
+   WebService 应用程序。
+
+
+
+
+
+

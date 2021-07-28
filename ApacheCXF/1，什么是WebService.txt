@@ -1,0 +1,18 @@
+1，什么是webService？
+- WebService是一个web应用程序。
+- WebService 的web应用是基于客户端 和 服务端的。
+- WebService 是基于Http协议的应用。
+- WebService 是一个跨编程语言，跨操作系统的远程调用技术。
+
+2，WebService 的应用场景？
+- 用于异构系统的整合。一个大型项目，不同的子项目根据业务不同可能导致开发语言不同。那么这写子项目之间
+  如果需要进行交互，则都可使用WebService来进行对应的开发，因为webservice是跨语言的所以能在异构系统之间进行很好的交互。
+  如：
+  淘宝是 java开发的，顺丰物流是 PHP开发的。那么淘宝订单需要查询顺丰的物流信息，两个系统就需要进行交互。
+  因为java 可以开发webservice 应用，php也可以开发webservice应用，所以两种语言开发的webservice的接口
+  的协议都是一样的，自然能很好的交互。
+
+- 用于同构系统的整合。即，两个系统用相同的语言来开发webservice应用天然能相互交互。
+
+2，如何开发webservice应用呢？
+   下面介绍 使用 java语言开发webservice应用。
