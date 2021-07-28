@@ -11,5 +11,27 @@
 
     <artifactId>cxf-jax-ws-client</artifactId>
 
+    <dependencies>
+        <!--cxf对jax-ws的支持-->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <!--内置jetty web服务器-->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <!--依赖日志,cxf底层依赖的是 log4j-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+    </dependencies>
 
 </project>

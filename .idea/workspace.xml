@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ed1466-1b32-4521-90e9-71114185d0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApacheCXF/4，使用CXF框架开发WebService客户端访问服务端.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/ClientDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -130,7 +133,7 @@
       <workItem from="1627401826135" duration="55000" />
       <workItem from="1627427132805" duration="2194000" />
       <workItem from="1627483600351" duration="3027000" />
-      <workItem from="1627486965015" duration="3461000" />
+      <workItem from="1627486965015" duration="4329000" />
     </task>
     <servers />
   </component>
