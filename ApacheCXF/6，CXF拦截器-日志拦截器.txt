@@ -1,0 +1,35 @@
+1，CXF的拦截器分为两种：
+   - 输入拦截器 ：拦截请求信息
+   - 输出拦截器 ：拦截响应信息
+
+2，客户端和服务端都可以设置拦截器
+   - 客户端
+     发送请求是使用”输出拦截器“
+     接收到服务端的响应是”输入拦截器“
+   - 服务端
+     收到客户端的请求是“输入拦截器”
+     响应客户端时“输出拦截器”
+
+3，分别怎么设置呢？
+   首先：CXF 底层输出日志，是需要log4j的，所以需要先配置log4j的配置文件
+
+   服务端 设置输入拦截器和输出拦截器：
+   // 设置拦截器，需要在 发布接口之前设置
+   // 设置输入拦截器
+   factoryBean.getInInterceptors().add(new LoggingInInterceptor());
+   // 设置输出拦截器
+   factoryBean.getOutInterceptors().add(new LoggingOutInterceptor());
+
+   //3,发布接口（阻塞方法）
+   factoryBean.create();
+
+   客户端 设置输入拦截器和输出拦截器：在服务代理对象之后创建，并使用 Client 对象进行
+   //3，创建指定接口的代理对象
+   UserService userService = (UserService) proxyFactoryBean.create();
+
+   // 设置输入输出拦截器
+   Client client = ClientProxy.getClient(userService);
+   // 输入拦截器（服务端的响应）
+   client.getInInterceptors().add(new LoggingInInterceptor());
+   // 输出拦截器（发送请求到服务端）
+   client.getOutInterceptors().add(new LoggingOutInterceptor());

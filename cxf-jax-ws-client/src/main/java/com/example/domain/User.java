@@ -1,14 +1,24 @@
-package com.example;
+package com.example.domain;
 
-public class User1 {
+public class User {
     private Integer id;
     private String name;
     private Integer age;
 
-    public User1() {
+    private String sex;
+
+    public String getSex() {
+        return sex;
     }
 
-    public User1(Integer id, String name, Integer age) {
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public User() {
+    }
+
+    public User(Integer id, String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;

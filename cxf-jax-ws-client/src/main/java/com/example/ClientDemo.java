@@ -1,6 +1,11 @@
 package com.example;
 
+import com.example.domain.User;
 import com.example.service.UserService;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.frontend.ClientProxy;
+import org.apache.cxf.interceptor.LoggingInInterceptor;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
 public class ClientDemo {
@@ -16,7 +21,14 @@ public class ClientDemo {
         //3，创建指定接口的代理对象
         UserService userService = (UserService) proxyFactoryBean.create();
 
+        // 设置输入输出拦截器
+        Client client = ClientProxy.getClient(userService);
+        // 输入拦截器（服务端的响应）
+        client.getInInterceptors().add(new LoggingInInterceptor());
+        // 输出拦截器（发送请求到服务端）
+        client.getOutInterceptors().add(new LoggingOutInterceptor());
+
         //4，通过代理对象访问服务端对应的接口
-        userService.saveUser(new User1(1,"xiaozhang",22));
+        userService.saveUser(new User(1,"xiaozhang",22));
     }
 }

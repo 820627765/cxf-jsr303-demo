@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ed1466-1b32-4521-90e9-71114185d0e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ApacheCXF/3，使用CXF框架开发JAX-WS规范的WebService应用.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ApacheCXF/3，使用CXF框架开发JAX-WS规范的WebService应用-及服务端开发.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApacheCXF/5，Jax-ws底层原理.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApacheCXF/6，CXF拦截器-日志拦截器.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/bagedate.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/root.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApacheCXF/4，使用CXF框架开发WebService客户端访问服务端.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ApacheCXF/4，使用CXF框架开发WebService客户端访问服务端.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/ClientDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/User1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/META-INF/cxf-jax-ws-client.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/ClientDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/ClientDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/java/com/example/PublishServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/java/com/example/PublishServerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-server/target/classes/com/example/PublishServerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-server/target/classes/com/example/PublishServerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +62,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cxf-jax-ws-client/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\cxf-jsr303-demo\cxf-jax-ws-client\src\main\resources" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.ClientDemo">
     <configuration name="ClientDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -61,7 +76,7 @@
       <module name="cxf-jax-ws-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.*" />
+          <option name="PATTERN" value="com.example.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,7 +89,7 @@
       <module name="cxf-jax-ws-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.*" />
+          <option name="PATTERN" value="com.example.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,7 +179,7 @@
       <workItem from="1627427132805" duration="2194000" />
       <workItem from="1627483600351" duration="3027000" />
       <workItem from="1627486965015" duration="5617000" />
-      <workItem from="1627574108730" duration="1944000" />
+      <workItem from="1627574108730" duration="5672000" />
     </task>
     <servers />
   </component>
@@ -175,30 +190,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1627488744149">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1627576461783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627488744149" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576461783" />
     <state x="467" y="21" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627576030296">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="467" y="21" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576030296" />
-    <state width="1237" height="169" key="GridCell.Tab.0.bottom" timestamp="1627576014161">
+    <state width="1237" height="295" key="GridCell.Tab.0.bottom" timestamp="1627579746984">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576014161" />
-    <state width="1237" height="169" key="GridCell.Tab.0.center" timestamp="1627576014160">
+    <state width="1237" height="295" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627579746984" />
+    <state width="1237" height="295" key="GridCell.Tab.0.center" timestamp="1627579746984">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576014160" />
-    <state width="1237" height="169" key="GridCell.Tab.0.left" timestamp="1627576014160">
+    <state width="1237" height="295" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627579746984" />
+    <state width="1237" height="295" key="GridCell.Tab.0.left" timestamp="1627579746983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576014160" />
-    <state width="1237" height="169" key="GridCell.Tab.0.right" timestamp="1627576014160">
+    <state width="1237" height="295" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627579746983" />
+    <state width="1237" height="295" key="GridCell.Tab.0.right" timestamp="1627579746984">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576014160" />
+    <state width="1237" height="295" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627579746984" />
     <state width="1237" height="213" key="GridCell.Tab.1.bottom" timestamp="1627573797198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -219,5 +234,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="56" y="2" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627491933480" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1627576688492">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627576688492" />
   </component>
 </project>

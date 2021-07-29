@@ -1,0 +1,43 @@
+2021-07-30 01:30:22 ReflectionServiceFactoryBean.java INFO Creating Service {http://service.example.com/}UserServiceService from class com.example.service.UserService
+2021-07-30 01:30:23 ServerImpl.java INFO Setting the server's publish address to be http://localhost:8888/userService
+2021-07-30 01:30:23 Server.java INFO jetty-8.1.15.v20140411
+2021-07-30 01:30:24 AbstractConnector.java INFO Started SelectChannelConnector@localhost:8888
+2021-07-30 01:30:35 ReflectionServiceFactoryBean.java INFO Creating Service {http://service.example.com/}UserServiceService from class com.example.service.UserService
+2021-07-30 01:30:37 AbstractLoggingInterceptor.java INFO Outbound Message
+---------------------------
+ID: 1
+Address: http://localhost:8888/userService
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml
+Headers: {Accept=[*/*], SOAPAction=[""]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:saveUser xmlns:ns2="http://service.example.com/"><arg0><age>22</age><id>1</id><name>xiaozhang</name></arg0></ns2:saveUser></soap:Body></soap:Envelope>
+--------------------------------------
+2021-07-30 01:30:37 AbstractLoggingInterceptor.java INFO Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8888/userService
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[236], content-type=[text/xml; charset=UTF-8], Host=[localhost:8888], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:saveUser xmlns:ns2="http://service.example.com/"><arg0><age>22</age><id>1</id><name>xiaozhang</name></arg0></ns2:saveUser></soap:Body></soap:Envelope>
+--------------------------------------
+2021-07-30 01:30:38 AbstractLoggingInterceptor.java INFO Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:saveUserResponse xmlns:ns2="http://service.example.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2021-07-30 01:30:38 AbstractLoggingInterceptor.java INFO Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Server=[Jetty(8.1.15.v20140411)], transfer-encoding=[chunked]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:saveUserResponse xmlns:ns2="http://service.example.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
