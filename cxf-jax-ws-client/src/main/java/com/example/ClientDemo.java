@@ -1,6 +1,5 @@
 package com.example;
 
-import com.example.domain.User;
 import com.example.service.UserService;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
@@ -18,6 +17,6 @@ public class ClientDemo {
         UserService userService = (UserService) proxyFactoryBean.create();
 
         //4，通过代理对象访问服务端对应的接口
-        userService.saveUser(new User(1,"xiaozhang",22));
+        userService.saveUser(new User1(1,"xiaozhang",22));
     }
 }

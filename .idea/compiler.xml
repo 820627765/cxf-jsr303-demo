@@ -13,8 +13,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cxf-jax-ws-client" options="-parameters" />
-      <module name="cxf-jax-ws-server" options="-parameters" />
+      <module name="cxf-jax-ws-client" options="" />
+      <module name="cxf-jax-ws-server" options="" />
       <module name="cxf-jsr303-demo" options="-parameters" />
     </option>
   </component>

@@ -2,6 +2,8 @@
 2，加入依赖，和server端一样
 3，将服务端接口的Service 和 模型对象拷贝过来
    UserService 和 User
+   注意：接口名和接口路径必须和服务端保持一致，否则会报错。
+        参数User 类名必须和服务端一致，包路径可以不一致。
 3，编写代码调用服务端
    public static void main(String[] args) {
        // 创建一个客户端的工厂对象（可以看出是个代理工厂）
