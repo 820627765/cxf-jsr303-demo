@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/cxf-jax-ws-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cxf-jax-ws-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

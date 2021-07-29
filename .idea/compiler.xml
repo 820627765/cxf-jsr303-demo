@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cxf-jax-ws-server" />
+        <module name="cxf-jax-ws-spring-server" />
         <module name="cxf-jax-ws-client" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cxf-jax-ws-client" options="" />
       <module name="cxf-jax-ws-server" options="" />
+      <module name="cxf-jax-ws-spring-server" options="-parameters" />
       <module name="cxf-jsr303-demo" options="-parameters" />
     </option>
   </component>

@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ed1466-1b32-4521-90e9-71114185d0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ApacheCXF/5，Jax-ws底层原理.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApacheCXF/6，CXF拦截器-日志拦截器.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/bagedate.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/root.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApacheCXF/4，使用CXF框架开发WebService客户端访问服务端.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ApacheCXF/4，使用CXF框架开发WebService客户端访问服务端.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/ClientDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/META-INF/cxf-jax-ws-client.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/ClientDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/ClientDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-client/target/classes/com/example/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/java/com/example/PublishServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-server/src/main/java/com/example/PublishServerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cxf-jax-ws-server/target/classes/com/example/PublishServerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cxf-jax-ws-server/target/classes/com/example/PublishServerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApacheCXF/7，Spring整合Jax-ws-服务端开发.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java/com/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java/com/example/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java/com/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cxf-jax-ws-spring-server/src/main/resources/appLicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -66,11 +59,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.domain" />
+      <recent name="com.example.service.impl" />
+      <recent name="com.example.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\cxf-jsr303-demo\cxf-jax-ws-client\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientDemo">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="ClientDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ClientDemo" />
       <module name="cxf-jax-ws-client" />
@@ -144,6 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cxf-jax-ws-spring-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cxf-jsr303-demo" />
       <extension name="coverage">
@@ -159,6 +170,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Application.ClientDemo" />
         <item itemvalue="Application.PublishServerService" />
         <item itemvalue="Spring Boot.Application" />
@@ -180,6 +192,7 @@
       <workItem from="1627483600351" duration="3027000" />
       <workItem from="1627486965015" duration="5617000" />
       <workItem from="1627574108730" duration="5672000" />
+      <workItem from="1627581226843" duration="3327000" />
     </task>
     <servers />
   </component>
@@ -230,10 +243,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="213" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627573797198" />
-    <state x="56" y="2" key="new project wizard" timestamp="1627491933480">
+    <state x="56" y="2" key="new project wizard" timestamp="1627581703503">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="56" y="2" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627491933480" />
+    <state x="56" y="2" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627581703503" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1627576688492">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

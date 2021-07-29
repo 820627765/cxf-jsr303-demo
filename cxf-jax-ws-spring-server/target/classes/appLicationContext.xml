@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jawx="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--发布接口
+        address 用于指定webservice 服务的访问根路径，即:http://ip:port/应用上下文根/webservice的address
+        serviceClass 指定要发布的webservice接口全路径
+        <jawx:server> 标签就等同于 JaxWsSrverFactoryBean 工厂bean，address 设置工厂bean的属性
+                      serviceClass 属性设置服务接口
+        <jawx:serviceBean> 用于设置服务对象的实现类
+
+    -->
+    <jawx:server address="/userService" serviceClass="com.example.service.UserService">
+        <!--指定服务对应的实现类对象-->
+        <jawx:serviceBean>
+            <bean class="com.example.service.impl.UserServiceImpl"/>
+        </jawx:serviceBean>
+
+        <!--设置输入拦截器-->
+        <jawx:inInterceptors>
+            <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"/>
+        </jawx:inInterceptors>
+        <!--设置输出拦截器-->
+        <jawx:outInterceptors>
+            <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"/>
+        </jawx:outInterceptors>
+    </jawx:server>
+</beans>
